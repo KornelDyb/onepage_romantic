@@ -1,0 +1,193 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body & font */
+  body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    color: #5a3d5c;
+  }
+  
+  /* Section headings */
+  section h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 2rem 0 1rem 0; /* górny margines 2rem, dolny 1rem */
+    font-size: 2rem;
+    color: #5a3d5c;
+  }
+  
+  /* Carousel wrapper */
+  .carousel {
+    position: relative;
+    max-width: 600px;       /* Ograniczamy szerokość karuzeli */
+    margin: 0 auto;         /* Wycentrowanie */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;          /* Dodatkowy odstęp wokół obrazka */
+    background-color: #fff; /* Jasne tło pod obrazkiem */
+  }
+  
+  /* .carousel-inner bez stałej wysokości,
+     aby karuzela dostosowała się do rozmiaru aktywnego zdjęcia */
+  .carousel-inner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+          /* Elementy karuzeli w jednym rzędzie */
+  }
+  
+  /* Każdy slajd jest domyślnie niewidoczny, tylko 'active' będzie widoczny */
+  .carousel-item {
+    flex: 0 0 100%;         /* Szerokość 100% kontenera */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;    
+  }
+  
+  /* Tylko aktywny slajd widoczny */
+  .carousel-item.active {
+    opacity: 1;
+    display: flex;
+  }
+  
+  .carousel-item:not(.active) {
+    opacity: 0;
+  }
+  
+  /* Obramowanie z animacją wokół zdjęcia */
+  .image-wrapper {
+    display: inline-flex;    /* inline-flex pozwala centrować zawartość */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 6px solid transparent;
+    border-radius: 10px;
+    animation: borderPulse 4s infinite;
+  }
+  
+  /* Animacja zmiany koloru ramki */
+  @keyframes borderPulse {
+    0% {
+      border-color: #ff69b4;
+    }
+    50% {
+      border-color: #5a3d5c;
+    }
+    100% {
+      border-color: #ff69b4;
+    }
+  }
+  
+  /* Zdjęcie - zachowaj proporcje, dopasuj do max. szerokości/wysokości karuzeli */
+  .image-wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;        /* Pozwala zachować proporcje i nie przybliża zdjęcia */
+    object-fit: contain;
+    border-radius:10px;
+  }
+  
+  /* Kontrolki karuzeli */
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #5a3d5c;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    z-index: 2;          /* Nad zdjęciami */
+  }
+  
+  .carousel-control:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .carousel-control.prev {
+    left: 0.5rem;
+  }
+  
+  .carousel-control.next {
+    right: 0.5rem;
+  }
+  
+  /* Sekcja wiadomości */
+  #message {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  #message p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Stopka */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: #5a3d5c;
+  }
+  
+  /* Kontener dla serduszek */
+  #hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  /* Animacja serduszek */
+  .heart {
+    position: fixed;
+    top: -50px;
+    color: rgba(255, 105, 180, 0.7);
+    pointer-events: none;
+    will-change: transform, opacity;
+    animation: fall linear forwards;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
