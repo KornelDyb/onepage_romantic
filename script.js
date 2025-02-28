@@ -68,21 +68,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Tutaj przechowujemy teksty (bez serwera, bez fetch)
   const messages = [
-    "Mam dla Ciebie historię, którą muszę Ci opowiedzieć… o tym, jak to się zaczęło. 📖",
-    "Pozwól, że Ci opowiem, jak się spotkaliśmy – to coś, co na pewno zapamiętam na długo. 💭",
-    "Poznaliśmy się w klubie, tamtej nocy coś między nami zaiskrzyło, choć jeszcze nie wiedzieliśmy, co z tego wyniknie. ✨",
-    "Po tamtej nocy zaczęliśmy się spotykać, spędzać czas w miejscach, gdzie łatwiej było poczuć, kim naprawdę jesteśmy. 🌙",
-    "Na początku wszystko było pełne emocji i niepewności, nie wiedzieliśmy, dokąd to zaprowadzi. 🤷‍♂️🤷‍♀️",
-    "Zaczęliśmy pisać do siebie, co sprawiło, że poznawanie siebie nabrało zupełnie innego wymiaru. 💬",
-    "Zaczęliśmy próbować nowych rzeczy, spędzać czas na spontanicznych przygodach. 🏞️",
-    "Widziałem, że czasem czujesz się zagubiona, ale to tylko sprawiało, że stawaliśmy się dla siebie coraz bardziej otwarci. 🌿",
-    "Teraz wiem, że chcemy doświadczać nowych rzeczy razem. Czekamy na to, co przed nami. 🚀",
-    "Czuję, że mamy przed sobą jeszcze mnóstwo wspólnych przygód. ⏳",
-    "Z każdym nowym doświadczeniem, nasze serca biją w tym samym rytmie, pełnym ekscytacji. 💓",
-    "Zaczynamy patrzeć na siebie i wiem, że każda chwila z Tobą to coś wyjątkowego. ✨",
-    "Chcemy spróbować wszystkiego razem – każdy moment to nowa okazja do wspólnych wspomnień. 🌍",
-    "To już nie tylko o poznawaniu, to o tworzeniu czegoś, co rośnie między nami, czegoś, co staje się naturalne. 🌟",
-    "Wiemy, że to, co mamy, jest czymś wyjątkowym – mamy siebie i czas na wspólne doświadczenia. 🚀",
+    "Spotkaliśmy się w klubie, tam zaiskrzyło w nas. ✨",
+    "Choć nie wiedzieliśmy wtedy, co wyniknie z tego raz. 💫",
+    "Pierwsze spotkania pełne wątpliwości i strach, 🚶‍♂️",
+    "Ale z każdą chwilą czułem, że idziemy w dobry szlak. 🔥",
+    "Pisaliśmy do siebie, każdy dzień to był znak. 💬",
+    "Że warto sprawdzić, dokąd zaprowadzi nas ten szlak. 🔑",
+    "Próbowaliśmy nowych rzeczy, małych chwil, 🎢",
+    "Z Tobą każdy dzień to jak nowy, piękny film. 🎬🌟",
     "Każdy dzień z Tobą to po prostu purrfekcja kicia i wiesz, że jestem w Tobie zainteresowany. 🐈"
   ];
 
@@ -111,5 +104,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Co 4 sekund zmieniamy tekst
-  setInterval(changeMessage, 5000);
+  setInterval(changeMessage, 4000);
 });
