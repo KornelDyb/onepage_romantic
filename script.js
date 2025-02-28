@@ -68,29 +68,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Tutaj przechowujemy teksty (bez serwera, bez fetch)
   const messages = [
-    "Każdy dzień z Tobą to po prostu purrfekcja.🐈 ",
-    "Czuję, że każdy moment z Tobą to dopiero początek czegoś ciekawego. 🤔",
-    "Twoja energia sprawia, że dzień nabiera zupełnie nowego wymiaru. ⚡",
-    "Z Tobą każda rozmowa to nowa przygoda, czekam na kolejne. 🗣️",
-    "Masz taki sposób bycia, że wszystko staje się po prostu... fajniejsze. 😊",
-    "Z każdym spotkaniem coraz bardziej mam wrażenie, że to dopiero początek. ⏳",
-    "Czuję, że nasze rozmowy to świetny sposób na poznanie siebie. 🤝",
-    "Nie wiem, dokąd to zaprowadzi, ale z Tobą na pewno będzie ciekawie. 🛤️",
-    "Z Tobą każdy dzień staje się pełen małych niespodzianek. 🎁",
-    "Jest coś w Twoim spojrzeniu, co sprawia, że trudno się oderwać. 👀",
-    "To, co mówisz, sprawia, że zaczynam patrzeć na świat inaczej. 🌍",
-    "Z Tobą łatwo się rozmawia, a każdy moment ma coś nieoczywistego. 🗨️",
-    "Zauważyłem, że z Tobą czas po prostu szybciej leci. ⏰",
-    "Nie wiem, dokąd to zaprowadzi, ale czuję, że warto. 🔮",
-    "Twój sposób bycia sprawia, że naprawdę chce się poznać Cię lepiej. 💬",
-    "Z Tobą czuję, że nawet codzienne rzeczy stają się ciekawe. 🌱",
-    "Czuję, że z Tobą mogę odkrywać rzeczy, o których wcześniej nie myślałem. 💡",
-    "Każde spotkanie z Tobą to mała tajemnica, którą chce się odkrywać. 🔍",
-    "Wydajesz się być osobą, z którą nie można się nudzić. 🎲",
-    "Z Tobą każda minuta ma swój charakter, nie ma miejsca na nudę. 🕒",
-    "Zaczynam zauważać, że z Tobą wszystko wydaje się prostsze. ✨"
-];
-  
+    "Mam dla Ciebie historię, którą muszę Ci opowiedzieć… o tym, jak to się zaczęło. 📖",
+    "Pozwól, że Ci opowiem, jak się spotkaliśmy – to coś, co na pewno zapamiętam na długo. 💭",
+    "Poznaliśmy się w klubie, tamtej nocy coś między nami zaiskrzyło, choć jeszcze nie wiedzieliśmy, co z tego wyniknie. ✨",
+    "Po tamtej nocy zaczęliśmy się spotykać, spędzać czas w miejscach, gdzie łatwiej było poczuć, kim naprawdę jesteśmy. 🌙",
+    "Na początku wszystko było pełne emocji i niepewności, nie wiedzieliśmy, dokąd to zaprowadzi. 🤷‍♂️🤷‍♀️",
+    "Zaczęliśmy pisać do siebie, co sprawiło, że poznawanie siebie nabrało zupełnie innego wymiaru. 💬",
+    "Zaczęliśmy próbować nowych rzeczy, spędzać czas na spontanicznych przygodach. 🏞️",
+    "Widziałem, że czasem się zagubiałaś, ale to tylko sprawiało, że stawaliśmy się dla siebie coraz bardziej otwarci. 🌿",
+    "Choć nadal pojawiały się momenty niepewności, z każdym kolejnym spotkaniem stawaliśmy się sobie coraz bliżsi. 🔗",
+    "Zaczęliśmy spędzać więcej czasu razem, zauważając, że stajemy się kimś więcej niż tylko znajomymi. 💑",
+    "Z każdym dniem wszystko stawało się coraz bardziej naturalne, jakbyśmy znali się od zawsze. 🌸",
+    "Teraz czuję, że chcemy doświadczać nowych rzeczy razem. Czekamy na to, co przed nami. 🚀",
+    "Czuję, że mamy przed sobą jeszcze mnóstwo wspólnych przygód. ⏳",
+    "Z każdym nowym doświadczeniem, nasze serca biją w tym samym rytmie, pełnym ekscytacji. 💓",
+    "Zaczynamy patrzeć na siebie i wiem, że każda chwila z Tobą to coś wyjątkowego. ✨",
+    "Chcemy spróbować wszystkiego razem – każdy moment to nowa okazja do wspólnych wspomnień. 🌍",
+    "To już nie tylko o poznawaniu, to o tworzeniu czegoś, co rośnie między nami, czegoś, co staje się naturalne. 🌟",
+    "Wiemy, że to, co mamy, jest czymś wyjątkowym – mamy siebie i czas na wspólne doświadczenia. 🚀",
+    "Każdy dzień z Tobą to po prostu purrfekcja kicia i wiesz, że jestem w Tobie zainteresowany. 🐈"
+  ];
 
   let msgIndex = 0;
 
@@ -117,5 +114,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Co 4 sekund zmieniamy tekst
-  setInterval(changeMessage, 4000);
+  setInterval(changeMessage, 5000);
 });
